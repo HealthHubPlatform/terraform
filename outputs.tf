@@ -25,6 +25,9 @@ output "healthhubplatform_vpc_public_subnets" {
 output "healthhubplatform_vpc_public_subnets_cidr_blocks" {
   value = module.healhubplatform-vpc.public_subnets_cidr_blocks
 }
+output "healthhubplatform_eks_cluster_id" {
+  value = aws_eks_cluster.healthhubplatform.id
+}
 output "healthhubplatform_eks_cluster_name" {
   value = aws_eks_cluster.healthhubplatform.name
 }

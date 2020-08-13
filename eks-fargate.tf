@@ -207,9 +207,9 @@ resource "aws_eks_node_group" "healthhubplatform" {
   subnet_ids      = data.terraform_remote_state.global.outputs.healthhubplatform_vpc_private_subnets
 
   scaling_config {
-    desired_size = 1
-    max_size     = 2
-    min_size     = 1
+    desired_size = 3
+    max_size     = 3
+    min_size     = 3
   }
 
   instance_types = ["t2.micro"]
