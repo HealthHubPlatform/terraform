@@ -17,10 +17,6 @@ resource "aws_s3_bucket" "terraform_state" {
   # TODO add tags
 }
 
-resource "aws_s3_bucket_policy" "terraform_state_policy" {
-  bucket = aws_s3_bucket.terraform_state.id
-}
-
 resource "aws_dynamodb_table" "terraform_state_lock" {
   name         = "terraform-state.healhubplatform"
   billing_mode = "PAY_PER_REQUEST"
