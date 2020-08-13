@@ -11,7 +11,7 @@ module "healhubplatform-vpc" {
   enable_nat_gateway = true
 
   tags = {
-    Terraform = "true"
+    Terraform   = "true"
     Environment = "dev"
   }
 }
