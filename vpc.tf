@@ -11,7 +11,8 @@ module "healhubplatform-vpc" {
   enable_nat_gateway = true
 
   tags = {
-    Terraform   = "true"
-    Environment = "dev"
+    Terraform                                     = "true"
+    Environment                                   = "dev"
+    "kubernetes.io/cluster/healthhubplatform-dev" = "shared"
   }
 }
