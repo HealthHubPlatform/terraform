@@ -21,7 +21,7 @@ provider "kubernetes" {
 data "terraform_remote_state" "global" {
   backend = "s3"
   config = {
-    bucket = "terraform-state.healhubplatform"
+    bucket = "terraform-state.healthhubplatform"
     key    = "remote_state/terraform.tfstate"
     region = "us-east-1"
   }

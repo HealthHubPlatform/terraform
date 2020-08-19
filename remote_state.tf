@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = "terraform-state.healhubplatform"
+  bucket = "terraform-state.healthhubplatform"
 
   # Enable versioning so we can see the full revision history of our
   # state files
@@ -18,7 +18,7 @@ resource "aws_s3_bucket" "terraform_state" {
 }
 
 resource "aws_dynamodb_table" "terraform_state_lock" {
-  name         = "terraform-state.healhubplatform"
+  name         = "terraform-state.healthhubplatform"
   billing_mode = "PAY_PER_REQUEST"
   hash_key     = "LockID"
   attribute {
@@ -31,10 +31,10 @@ resource "aws_dynamodb_table" "terraform_state_lock" {
 
 terraform {
   backend "s3" {
-    bucket         = "terraform-state.healhubplatform"
+    bucket         = "terraform-state.healthhubplatform"
     key            = "remote_state/terraform.tfstate"
     region         = "us-east-1"
-    dynamodb_table = "terraform-state.healhubplatform"
+    dynamodb_table = "terraform-state.healthhubplatform"
     encrypt        = true
   }
 }
