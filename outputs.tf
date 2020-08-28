@@ -25,4 +25,4 @@ output "healthhubplatform_eks_cluster_id" {
 }
 output "healthhubplatform_eks_cluster_name" {
   value = aws_eks_cluster.healthhubplatform.name
-}
+}e
