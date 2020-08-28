@@ -15,3 +15,4 @@ Steps to run Terraform locally
 8. Run the terraform initialization command `terraform init`
 9. Run terraform plan command to see what changes it will be perform `terraform plan`
 10. Apply the terraform changes by running the command `terraform apply` and type `yes` when it prompts to apply the changes
+11. If you run into issue where terraform version needs to be updated, run this command `brew upgrade terraform`
