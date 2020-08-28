@@ -6,7 +6,7 @@ Steps to run Terraform locally
 1. Install Homebrew on your mac - https://brew.sh/
 2. Download Terraform on your mac - `brew install terraform`
 3. Download Accesskey and SecretKey from your IAM user from AWS Console
-4. Export them as Environment variables
+4. Export them as Environment variables. To have them exported you need to run the below commands on the terminal
 5. `export AWS_ACCESS_KEY_ID="<your access key id>"` 
 6. `export AWS_SECRET_ACCESS_KEY="<your secret access key>"` 
 7. Clone this git repo onto your mac 
